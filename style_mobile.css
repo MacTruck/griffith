@@ -28,6 +28,7 @@
 			text-transform: uppercase;
 			letter-spacing: .125em;
 			margin-bottom: 30px;
+			color: #f9bc6f;
 		}
 		h4 {
 			font-family: 'Merriweather';
@@ -37,11 +38,14 @@
 		p {
 			line-height: 1.75em;
 		}
+		.highlight {
+			color: salmon;
+		}
 		.griffithFont {
 			font-family: 'Barlow Condensed', sans-serif;
 			text-transform: uppercase;
 			display: inline-block;
-			font-size: 1.625rem;
+			font-size: 1.75rem;
 			text-shadow: 0 0 30px rgba(255,255,255,.75)
 		}
 		body {
@@ -63,9 +67,9 @@
 		}
 		nav .nav-toggle {
 			position: absolute;
-			top: 1em;
+			top: .75em;
 			right: 1.5rem;
-			font-size: 1.25rem;
+			font-size: 1.5rem;
 			cursor: pointer;
 			color: #f9bc6f;
 		}
@@ -87,31 +91,42 @@
 			font-size: 1.5rem;
 			font-weight: 600;
 			letter-spacing: .0125rem;
+			line-height: 2em;
+			border-bottom: 1px dashed #333;
+		}
+		.nav-list li:first-child, li:last-child {
+			border-bottom: 0;
+		}
+		.top-spacer {
+			background: red;
+			width: 100%;
+			height: 57px;
 		}
 		.main {
 			background-image: url("img/night_griffith_2000x1253.jpg"), linear-gradient(180deg, black, #090909);
 			background-size: contain;
 			background-repeat: no-repeat;
 			position: relative;
-			top: 57px;
 			overflow: auto;
 		}
+		section {
+			margin: 30px;
+			overflow: hidden;
+		}
+		#hero {
+			padding-top: 0;
+			margin-top: 0;
+		}
 		#hero h1 {
-			margin: 2em 0 5em 0;
-		}
-		.grid {
-/*			width: 100%;*/
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 5px;
-		}
-		.spanGrid {
-			grid-column: span 3;
+			margin: 0;
+			margin-top: 40px;
+			margin-bottom: 130px;
 		}
 		.card {
 			background: white;
 			color: #333;
-			margin: 20px;
+			margin: 20px 10px 5px 10px;
+			margin-bottom: 5px;
 		}
 		.card img {
 			max-width: 100%;
@@ -122,6 +137,7 @@
 		}
 		.minicard {
 			padding: 1em;
+			margin: 10px;
 		}
 		#starParties {
 			grid-column: 7 / span 5;
@@ -154,24 +170,40 @@
 			left: 50%;
 			margin-left: -12.5px;
 		}
+		#visit p {
+			margin-bottom: 2em;
+		}
+		#busIcon {
+			width: 30px;
+		}
+		#carIcon {
+			width: 20px;
+		}
 		@keyframes spin {
 			100% { transform: rotate(360deg); }
 		}
-/*		footer {
+		footer {
 			background: #333;
-			height: 500px;
+			padding: 40px 20px 20px 20px;
 		}
 		footer .title {
-			margin-top: 50px;
+			margin: 0 0 20px 0;
+			color: #999;
+			text-shadow: none;
 		}
 		footer .info {
 			font-size: .9rem;
 			color: #888;
 			grid-column: 3 / span 8;
 		}
-
-		.highlight {
-			color: salmon;
+/*
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 5px;
+		}
+		.spanGrid {
+			grid-column: span 3;
 		}
 		section {
 			margin: 20px 0;
