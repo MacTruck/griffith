@@ -1,0 +1,192 @@
+		html {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			color: #fafafa;
+		}
+		body {
+			font-family: "Open Sans";
+			text-align: center;
+			background-image: url("img/night_griffith_2000x1253.jpg"), linear-gradient(180deg, black, black);
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
+/*		header {
+			top: 0;
+			background: rgba(0,0,0,.35);
+			padding: 0 10px 10px 10px;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			transition: .5s ease all;
+		}
+		a:hover {
+			color: orchid;
+		}
+		p {
+			line-height: 1.75em;
+		}
+		nav {
+			display: block;
+			padding: 10px;
+		}
+		nav #icon {
+			float: left;
+			font-weight: 900;
+			margin: 0 3px;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+		}
+		li {
+			float: right;
+			padding: 3px 5px;
+			margin: 5px;
+			font-size: .9rem;
+			font-weight: 600;
+			letter-spacing: .0125rem;
+		}
+		header:after {
+			clear: both;
+			display: block;
+			content: " ";
+		}
+		footer {
+			background: #333;
+			height: 500px;
+		}
+		footer .title {
+			margin-top: 50px;
+		}
+		footer .info {
+			font-size: .9rem;
+			color: #888;
+			grid-column: 3 / span 8;
+		}
+		.wrapper {
+			position: relative;
+			width: 1000px;
+			left: 50%;
+			margin-left: -500px;
+		}
+		.griffithFont {
+			font-family: 'Barlow Condensed', sans-serif;
+			text-transform: uppercase;
+			float: left;
+			font-size: 1.4rem;
+			margin: 0 3px;
+			padding: 3px 5px;
+		}
+		h1 {
+			font-size: 4rem;
+		}
+		h2 {
+			font-size: 2.5rem;
+			margin-bottom: 30px;
+		}
+		h4 {
+			font-family: 'Merriweather';
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+		}
+		h1, h2, h3, h5 {
+			font-family: 'Playfair Display', sans-serif;
+			font-style: italic;
+			font-weight: 700;
+		}
+		.highlight {
+			color: salmon;
+		}
+		section {
+			margin: 20px 0;
+		}
+		#welcome {
+			position: relative;
+			height: 600px;
+			overflow: hidden;
+		}
+		#sky {
+			position: relative;
+			grid-column: 1 / span 12;
+		}
+		.hero h1 {
+			margin-top: 16rem;
+			text-shadow: 3px 3px 10px rgba(0,0,0,.5);
+		}
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap: 10px;
+		}
+		.spanGrid {
+			grid-column: 1 / span 12;
+		}
+		.spanThird {
+			grid-column: span 4;
+		}
+		.card {
+			background: white;
+			margin: 3px;
+			transition: .5s ease all;
+		}
+		.card:hover {
+			margin: 0;
+		}
+		.card img {
+			width: 100%;
+			display: block;
+		}
+		.cardBottom {
+			text-align: left;
+			padding: 30px 30px 40px 30px;
+			color: #333;
+		}
+		#starParties {
+			grid-column: 7 / span 5;
+			background: #444;
+			color: white;
+			letter-spacing: .025em;
+		}
+		#comet {
+			grid-column: 1 / span 6;
+			background: darkred;
+			color: white;
+		}
+		#moonPhase {
+			grid-column: 12 / span 1;
+			background: #2a2a2a;
+		}
+		#phase {
+			position: relative;
+			height: 30px;
+			width: 30px;
+			top: 27%;
+			left: 32%;
+		}
+		#moonPhase img {
+			width: 25px;
+			animation: spin 45s linear infinite;
+			position: relative;
+			top: 25%;
+		}
+		@keyframes spin {
+			100% { transform: rotate(360deg); }
+		}
+		#busIcon {
+			width: 25px;
+			opacity: .9;
+		}
+
+@media screen and (min-width: 320px) {
+	
+}
+@media screen and (min-width: 680px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
