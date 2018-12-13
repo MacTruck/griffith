@@ -20,9 +20,11 @@
 			<ul class="nav-list" id="js-menu">
 				<li class="dash">—</li>
 				<li><a href="#">Planetarium Tickets</a></li>
-				<li><a href="#">Plan a Visit</a></li>
-				<li><a href="#">Our Exhibits</a></li>
-				<li><a href="#">About Griffith</a></li>
+				<li><a href="#">Plan a Visit</a></li> <!-- include WEATHER, GETTING HERE(?), ADMISSION, <<CALENDAR / SKY REPORT>>, CAFE, HELPFUL GUIDELINES, FAQ -->
+				<li><a href="#">Our Exhibits</a></li> <!-- include PLANETARIUM, PUBLIC TELESCOPES AND STAR PARTIES, EVENT HORIZON THEATER -->
+				<li><a href="#">Map(s)</a></li>
+				<li><a href="#">About Griffith</a></li> <!-- include SCHOOL RESOURCES, GRIFFITH PARK, FRIENDS OF THE OBSERVATORY, EMPLOYMENT, MEDIA & RENTAL INQUIRIES -->
+				<li><a href="#">Shop</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -34,8 +36,8 @@
 				<p>Southern California’s gateway to the cosmos! Look through telescopes, explore exhibits, see live shows in the Samuel Oschin Planetarium, and enjoy spectacular views of Los Angeles and the Hollywood Sign.</p>
 			</section>
 			<section id="sky">  <!-- class="grid" -->
-				<h2 class="spanGrid">In the sky tonight</h2>
-				<article class="card spanGrid">
+				<h2>In the sky tonight</h2>
+				<article class="card">
 					<img src="img/jupiter_card.jpg">
 					<div class="cardBottom">
 						<h4>Jupiter Rises</h4>
@@ -66,7 +68,7 @@
 					<img src="img/moon.gif">
 				</article>
 			</section>
-			<section id="visit" class="spanGrid">
+			<section id="visit">
 				<h2>Getting here</h2>
 				<img id="busIcon" src="img/bus_icon-white.svg">
 				<p>Take the <span class="highlight">Dash Observatory</span> bus from Vermont/Sunset Metro Red Line Station</p>
@@ -74,17 +76,24 @@
 				<p>2800 East Observatory Rd.<br>
 				Los Angeles, CA 90027</p>
 			</section>
+			<section id="hours">
+				<h2>Hours</h2>
+				<p><span class="faded">Monday</span> Closed<br>
+				<span class="faded">Tuesday - Friday</span> Noon - 10p<br>
+				<span class="faded">Satuday - Sunday</span> 10a - 10p</p>
+			</section>
 			
 		</div>
 
 		<footer>
 			<div class="wrapper grid">
-				<div class="griffithFont title"><a href="#" style="color: #999;">Griffith Observatory</a></div>
+				<div class="griffithFont title">Griffith Observatory</div>
 				<p class="info">Griffith Observatory is owned and operated by the City of Los Angeles, Department of Recreation and Parks. The City of Los Angeles is an equal opportunity employer. As a covered entity under Title II of the Americans with Disabilities Act, 1990 (ADA), the City of Los Angeles does not discriminate on the basis of disability and, upon request, will provide reasonable accommodation to ensure equal access to its programs, services, and activities.</p>
 				<p class="info">Free wifi<br>
 					No smoking<br>
 					No Drones<br>
 				</p>
+				<p><a href="#">LA Dept. of Recreation and Parks</a></p>
 			</div>
 		</footer>
 

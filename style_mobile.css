@@ -14,11 +14,11 @@
 		}
 		h1, h2, h3, h5 {
 			font-family: 'Playfair Display', sans-serif;
-			font-style: italic;
+			/*font-style: italic;*/
 			font-weight: 700;
 		}
 		h1 {
-			font-size: 1.875rem;
+			font-size: 1.75rem;
 		}
 		h2 {
 			font-family: 'Open Sans', sans-serif;
@@ -41,12 +41,16 @@
 		.highlight {
 			color: salmon;
 		}
+		.faded {
+			color: #999;
+			padding-right: 5px;
+		}
 		.griffithFont {
 			font-family: 'Barlow Condensed', sans-serif;
 			text-transform: uppercase;
 			display: inline-block;
 			font-size: 1.75rem;
-			text-shadow: 0 0 30px rgba(255,255,255,.75)
+			text-shadow: 0 0 10px rgba(255,255,255,.5);
 		}
 		body {
 			font-family: "Open Sans";
@@ -58,9 +62,10 @@
 		header {
 			position: fixed;
 			top: 0;
-			background: #090909;
+			background: black;
 			width: 100%;
 			z-index: 999;
+			box-shadow: 0 2px 5px rgba(0,0,0,.5);
 		}
 		nav {
 			padding: 15px;
@@ -121,6 +126,7 @@
 			margin: 0;
 			margin-top: 40px;
 			margin-bottom: 130px;
+			text-shadow: 3px 3px 5px rgba(0,0,0,.35);
 		}
 		.card {
 			background: white;
@@ -173,6 +179,9 @@
 		#visit p {
 			margin-bottom: 2em;
 		}
+		#visit p:last-child {
+			margin-bottom: 0;
+		}
 		#busIcon {
 			width: 30px;
 		}
@@ -188,7 +197,7 @@
 		}
 		footer .title {
 			margin: 0 0 20px 0;
-			color: #999;
+			color: #bbb;
 			text-shadow: none;
 		}
 		footer .info {
