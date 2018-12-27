@@ -1,16 +1,23 @@
+	:root {
+		--gold: #ffc66e; /*f9bc6f*/
+		--offwhite: #f9f9f9;
+		--lightgray: #999;
+		--midgray: #555;
+		--darkgray: #333;
+	}
 	html {
 		margin: 0;
 		padding: 0;
 		font-size: 14px;
-		color: #f9f9f9;
+		color: var(--offwhite);
 	}
 	a {
 		text-decoration: none;
 		transition: .5s ease all;
-		color: #f9f9f9;
+		color: var(--offwhite);
 	}
 	a:hover {
-		color: #f9bc6f;
+		color: var(--gold);
 	}
 	h1, h2, h3, h5 {
 		font-family: 'Playfair Display', sans-serif;
@@ -28,7 +35,7 @@
 		text-transform: uppercase;
 		letter-spacing: .125em;
 		margin-bottom: 30px;
-		color: #f9bc6f;
+		color: var(--gold);
 	}
 	h4 {
 		font-family: 'Merriweather';
@@ -42,7 +49,7 @@
 		color: salmon;
 	}
 	.faded {
-		color: #999;
+		color: var(--lightgray);
 		padding-right: 5px;
 	}
 	.griffithFont {
@@ -76,7 +83,7 @@
 		right: 1.5rem;
 		font-size: 1.5rem;
 		cursor: pointer;
-		color: #f9bc6f;
+		color: var(--gold);
 	}
 	.nav-list {
 		list-style-type: none;
@@ -84,11 +91,8 @@
 		padding: 20px 5px 40px 5px;
 		display: none;
 	}
-	.active {
-		display: block;
-	}
 	nav .dash {
-		color: #f9bc6f;
+		color: var(--gold);
 	}
 	li {
 		padding: 3px 5px;
@@ -97,7 +101,7 @@
 		font-weight: 600;
 		letter-spacing: .0125rem;
 		line-height: 2em;
-		border-bottom: 1px dashed #333;
+		border-bottom: 1px dashed var(--darkgray);
 	}
 	.nav-list li:first-child, li:last-child {
 		border-bottom: 0;
@@ -133,7 +137,7 @@
 	}
 	.card {
 		background: white;
-		color: #333;
+		color: var(--darkgray);
 		margin: 20px 10px 5px 10px;
 	}
 	.card img {
@@ -147,9 +151,16 @@
 		padding: 1em;
 		margin: 10px;
 	}
+	.showDesc {
+		display: none;
+		text-align: left;
+	}
+	.showtimes {
+		padding: .25em;
+	}
 	#starParties {
 		grid-column: 7 / span 5;
-		background: #444;
+		background: var(--midgray);
 		color: white;
 		letter-spacing: .025em;
 	}
@@ -160,7 +171,7 @@
 	}
 	#moonPhase {
 		grid-column: 12 / span 1;
-		background: #2a2a2a;
+		background: var(--darkgray); /*#2a2a2a*/
 	}
 	#phase {
 		position: relative;
@@ -194,18 +205,21 @@
 		100% { transform: rotate(360deg); }
 	}
 	footer {
-		background: #333;
+		background: var(--darkgray);
 		padding: 40px 20px 20px 20px;
 	}
 	footer .title {
 		margin: 0 0 20px 0;
-		color: #bbb;
+		color: var(--lightgray);
 		text-shadow: none;
 	}
 	footer .info {
 		font-size: .9rem;
 		color: #888;
 		grid-column: 3 / span 8;
+	}
+	.active {
+		display: block;
 	}
 
 @media screen and (min-width: 415px) {
@@ -240,8 +254,8 @@
 		background: rgba(0,0,0,1);
 		border-radius: 5px;
 		padding: 15px;
-		border-left: 2px solid gold;
-		border-right: 2px solid gold;
+		border-left: 2px solid var(--gold);
+		border-right: 2px solid var(--gold);
 	}
 	.grid {
 		display: grid;
@@ -301,7 +315,7 @@
 		.cardBottom {
 			text-align: left;
 			padding: 30px 30px 40px 30px;
-			color: #333;
+			color: var(--darkgray);
 		}
 		#busIcon {
 			width: 25px;

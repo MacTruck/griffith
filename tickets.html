@@ -9,6 +9,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:600|Open+Sans:400,600,700,900|Playfair+Display:400,400i,700,700i,900,900i|Merriweather:900" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style_mobile.css">
+
+	<style type="text/css">
+		.main {
+			background-image: url("img/planetarium.jpg"), linear-gradient(180deg, black, #090909);
+		}		
+	</style>
 </head>
 <body>
 	<header>
@@ -33,30 +39,53 @@
 		<div class="main">
 			<div class="wrapper">
 				<section id="hero">
-					<h1>Welcome to the universe</h1>
-					<p>Southern California’s gateway to the cosmos! Telescopes, exhibits, live shows, and more, all surrounded by the most spectacular views of our city of angels.</p>
+					<h1>Oschin Planetarium</h1>
+<!-- 					<p>Southern California’s gateway to the cosmos! Telescopes, exhibits, live shows, and more, all surrounded by the most spectacular views of our city of angels.</p> -->
 				</section>
 				<section id="sky" class="grid">
-					<h2 class="spanGrid">In the sky tonight</h2>
+					<h2 class="spanGrid">Planetarium Showtimes</h2>
 					<article class="card">
 						<img src="img/jupiter_card.jpg">
 						<div class="cardBottom">
-							<h4>Jupiter Rises</h4>
-							<p>This week Jupiter is on tap and looking sharp through our field public telescopes. Show up between 6p - 9p Tuesday - Sunday and witness the breath-taking views of our largest celestial planet.</p>
+							<h4>Centered in the Universe</h4>
+							<div class="showToggle">
+								<i class="fas fa-angle-down showArrow"></i>
+								<p class="showDesc">Centered in the Universe asks fundamental questions about our place in the Universe. Who are we? Where did we come from? Why is the world the way it is? Stunning full-dome video transports us back in time, from the Library of Alexandria, to Galileo’s courtyard, to the world’s most powerful telescopes in a quest for answers among the stars. Travel through time and space back to the big bang and through a universe filled with galaxies to find our cosmic origins and discover our true place in the cosmos.</p>
+							</div>
+							<p class="showtimes">
+								<span id="showtime">1:45p |</span>
+								<span class="showtimes">2:45p |</span>
+								<span class="showtimes">6:15p |</span>
+								<span class="showtimes">8:45p</span>
+							</p>
 						</div>
 					</article>
 					<article class="card">
 						<img src="img/saturn_card_moon.jpg">
 						<div class="cardBottom">
-							<h4>Saturn's Moons are Ringing</h4>
-							<p>Only a few more days remain this year to see Saturn in the evening twilight. At 5:30 p.m., when the sky should be dark enough to see it, Saturn appears similar to a solitary, bright golden star low in the southwest sky.</p>
+							<h4>Water is Life</h4>
+							<div class="showToggle">
+								<i class="fas fa-angle-down showArrow"></i>
+								<p class="showDesc">Water Is Life takes visitors on a journey through the solar system in search of water. On Earth, water is the key to life. If we find water on other worlds in the solar system, could we find life there, too? Blast off to Mars, crash through the ice of Jupiter’s moon Europa, and travel alongside a comet in a search for habitable worlds beyond Earth. Originally conceived and developed for Griffith Observatory’s school field trip program, Water is Life is an ideal family program that will appeal to even our youngest visitors.</p>
+							</div>
+							<p class="showtimes">
+								<span id="showtime">12:45p |</span>
+								<span class="showtimes">4:15p
+							</p>
 						</div>
 					</article>
 					<article class="card">
 						<img src="img/aquarius_card.jpg">
 						<div class="cardBottom">
-							<h4>A Wandering Martian</h4>
-							<p>The orange planet Mars is in the faint constellation Aquarius the Water-Bearer. Directly below Mars and midway between the planet and the horizon, the bright star Fomalhaut, in the constellation Pisces Austrinus the Southern Fishes, glimmers with a blue-white hue.</p>
+							<h4>Light of the Valkyries</h4>
+							<div class="showToggle">
+								<i class="fas fa-angle-down showArrow"></i>
+								<p class="showDesc">Light of the Valkyries takes us on a voyage of Viking cosmology and explores the true nature of the aurora borealis - the northern lights. The Vikings believed the northern lights were valkyries, warrior spirits who descended from heaven to take fallen heroes from the battlefield to Valhalla, the palace of the gods. Explore the source of the northern lights (the Sun), in a cosmic light show set to one of the most iconic pieces of music of all time, Wagner's "Ride of the Valkyries."</p>
+							</div>
+							<p class="showtimes">
+								<span id="showtime">5:15p |</span>
+								<span class="showtimes">7:45p</span>
+							</p>
 						</div>
 					</article>
 					<article id="comet" class="card minicard">
@@ -109,6 +138,27 @@
 					hamburger.classList.toggle('fa-bars');
 					hamburger.classList.toggle('fa-times');
 				});
+
+			
+			let showToggles = document.querySelectorAll('.showToggle');
+			
+			let count = 0;
+			console.log(showToggles);
+			showToggles.forEach(function(showToggle) {
+					showToggle.addEventListener('click', function(){dropDown(showToggle)})
+				});
+
+			function dropDown(showToggle) {
+				console.log(showToggle);
+				let showDesc = showToggle.querySelector(".showDesc")
+				let showArrow = showToggle.querySelector(".showArrow")
+				showDesc.classList.toggle('active');
+				showArrow.classList.toggle('fa-angle-down');
+				showArrow.classList.toggle('fa-angle-up');
+				count += 1;
+			}
+			// let showDesc2 = document.getElementById('showWater');
+			// let showDesc3 = document.getElementById('showValkries');
 		</script>
 	</body>
 </body>
