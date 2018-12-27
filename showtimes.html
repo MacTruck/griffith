@@ -22,7 +22,7 @@
 			<span class="nav-toggle" id="js-toggle">
 				<i class="fas fa-bars" id="hamburger"></i>
 			</span>
-			<a href="#"><div class="griffithFont">Griffith Observatory</div></a>
+			<a href="index.html"><div class="griffithFont">Griffith Observatory</div></a>
 			<ul class="nav-list" id="js-menu">
 				<li class="dash">—</li>
 				<li><a href="#">Planetarium Showtimes</a></li>
@@ -139,26 +139,20 @@
 					hamburger.classList.toggle('fa-times');
 				});
 
-			
 			let showToggles = document.querySelectorAll('.showToggle');
 			
-			let count = 0;
-			console.log(showToggles);
 			showToggles.forEach(function(showToggle) {
 					showToggle.addEventListener('click', function(){dropDown(showToggle)})
 				});
 
 			function dropDown(showToggle) {
-				console.log(showToggle);
 				let showDesc = showToggle.querySelector(".showDesc")
 				let showArrow = showToggle.querySelector(".showArrow")
+
 				showDesc.classList.toggle('active');
 				showArrow.classList.toggle('fa-angle-down');
 				showArrow.classList.toggle('fa-angle-up');
-				count += 1;
 			}
-			// let showDesc2 = document.getElementById('showWater');
-			// let showDesc3 = document.getElementById('showValkries');
 		</script>
 	</body>
 </body>
