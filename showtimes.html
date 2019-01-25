@@ -13,7 +13,10 @@
 	<style type="text/css">
 		.main {
 			background-image: url("img/planetarium.jpg"), linear-gradient(180deg, black, #090909);
-		}		
+		}
+		.cardBottom {
+			background-image: url("img/background-stripe.png");
+		}
 	</style>
 </head>
 <body>
@@ -25,12 +28,12 @@
 			<a href="index.html"><div class="griffithFont">Griffith Observatory</div></a>
 			<ul class="nav-list" id="js-menu">
 				<li class="dash">—</li>
-				<li><a href="#">Planetarium Showtimes</a></li>
-				<li><a href="#">Plan a Visit</a></li> <!-- include WEATHER, GETTING HERE(?), ADMISSION, <<CALENDAR / SKY REPORT>>, CAFE, HELPFUL GUIDELINES, FAQ -->
-				<li><a href="#">Our Exhibits</a></li> <!-- include PLANETARIUM, PUBLIC TELESCOPES AND STAR PARTIES, EVENT HORIZON THEATER -->
-				<li><a href="#">Maps</a></li>
+				<li><a href="#">Planetarium & Telescopes</a></li>
 				<li><a href="#">About Griffith</a></li> <!-- include SCHOOL RESOURCES, GRIFFITH PARK, FRIENDS OF THE OBSERVATORY, EMPLOYMENT, MEDIA & RENTAL INQUIRIES -->
-				<li><a href="#">Shop</a></li>
+				<li><a href="#">Amenities</a></li> <!-- include CAFE -->
+				<li><a href="#">Griffith Park</a></li>
+				<li><a href="#">Best Views in the City</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -40,14 +43,14 @@
 			<div class="wrapper">
 				<section id="hero">
 					<h1>Oschin Planetarium</h1>
-<!-- 					<p>Southern California’s gateway to the cosmos! Telescopes, exhibits, live shows, and more, all surrounded by the most spectacular views of our city of angels.</p> -->
+ 						<p>With its spectacular Zeiss star projector, digital projection system, state-of-the-art aluminum dome, comfy seats, sound system, and theatrical lighting, the 290-seat Samuel Oschin Planetarium theater is the finest planetarium in the world.</p>
 				</section>
-				<section id="sky" class="grid">
+				<section id="planetarium" class="grid">
 					<h2 class="spanGrid">Planetarium Showtimes</h2>
-					<article class="card">
-						<img src="img/jupiter_card.jpg">
+					<article class="card transparent-bg">
+						<img src="img/starburst.jpg">
 						<div class="cardBottom">
-							<h4>Centered in the Universe</h4>
+							<h4 class="showTitle">Centered in the Universe</h4>
 							<div class="showToggle">
 								<i class="fas fa-angle-down showArrow"></i>
 								<p class="showDesc">Centered in the Universe asks fundamental questions about our place in the Universe. Who are we? Where did we come from? Why is the world the way it is? Stunning full-dome video transports us back in time, from the Library of Alexandria, to Galileo’s courtyard, to the world’s most powerful telescopes in a quest for answers among the stars. Travel through time and space back to the big bang and through a universe filled with galaxies to find our cosmic origins and discover our true place in the cosmos.</p>
@@ -60,10 +63,10 @@
 							</p>
 						</div>
 					</article>
-					<article class="card">
-						<img src="img/saturn_card_moon.jpg">
+					<article class="card transparent-bg">
+						<img src="img/waves.jpg">
 						<div class="cardBottom">
-							<h4>Water is Life</h4>
+							<h4 class="showTitle">Water is Life</h4>
 							<div class="showToggle">
 								<i class="fas fa-angle-down showArrow"></i>
 								<p class="showDesc">Water Is Life takes visitors on a journey through the solar system in search of water. On Earth, water is the key to life. If we find water on other worlds in the solar system, could we find life there, too? Blast off to Mars, crash through the ice of Jupiter’s moon Europa, and travel alongside a comet in a search for habitable worlds beyond Earth. Originally conceived and developed for Griffith Observatory’s school field trip program, Water is Life is an ideal family program that will appeal to even our youngest visitors.</p>
@@ -74,10 +77,10 @@
 							</p>
 						</div>
 					</article>
-					<article class="card">
-						<img src="img/aquarius_card.jpg">
+					<article class="card transparent-bg">
+						<img src="img/aurora.jpg">
 						<div class="cardBottom">
-							<h4>Light of the Valkyries</h4>
+							<h4 class="showTitle">Light of the Valkyries</h4>
 							<div class="showToggle">
 								<i class="fas fa-angle-down showArrow"></i>
 								<p class="showDesc">Light of the Valkyries takes us on a voyage of Viking cosmology and explores the true nature of the aurora borealis - the northern lights. The Vikings believed the northern lights were valkyries, warrior spirits who descended from heaven to take fallen heroes from the battlefield to Valhalla, the palace of the gods. Explore the source of the northern lights (the Sun), in a cosmic light show set to one of the most iconic pieces of music of all time, Wagner's "Ride of the Valkyries."</p>
@@ -89,30 +92,49 @@
 						</div>
 					</article>
 					<article id="comet" class="card minicard">
-						<p><strong>Comet 46P/Wirtanen</strong> Dec 16 2018</p>
+						<p>Show tickets may be purchased in person at the observatory.</p>
 					</article>
-					<article id="starParties" class="card minicard">
+					<article id="nextStarParty" class="card minicard">
 						<p><strong>Next star party:</strong> Saturday December 15 2018</p>
 					</article>
 					<article id="moonPhase" class="card minicard">
 						<img src="img/moon.gif">
 					</article>
 				</section>
-				<section id="visit">
-					<h2>Getting here</h2>
-					<img id="busIcon" src="img/bus_icon-white.svg">
-					<p>Take the <span class="highlight">Dash Observatory</span> bus from Vermont/Sunset Metro Red Line Station</p>
-					<img id="carIcon" src="img/car_icon-white.svg">
-					<p>2800 East Observatory Rd.<br>
-					Los Angeles, CA 90027</p>
+				<div class="fullWidth">
+				<section id="starParties" class="grid rewrapped wideGrid">
+					<h2 class="spanGrid">Public Star Parties</h2>
+					<div class="halfGrid">
+						<h4 class="h4white">Telescopes Every Night</h4>
+						<p>Free public telescopes are available each evening the Observatory is open and skies are clear. Knowledgeable telescope demonstrators are available to guide any and all guests.</p>
+
+						<h4 class="h4white">Special Saturdays</h4>
+						<p>Free public star parties are held monthly at Griffith Observatory from 2:00 p.m. to 9:45 p.m. with the assistance of volunteers from the Los Angeles Astronomical Society, the Los Angeles Sidewalk Astronomers, and The Planetary Society.</p>
+						<p>Enjoy the stellar opportunity for the whole family to look at our celestial objects through a variety of telescopes, and to talk to knowledgeable amateur astronomers about the sky and their equipment.</p>
+					</div>
+					<div class="halfGrid hideSmall">
+						<img src="img/nebula.jpg">
+					</div>
 				</section>
-				<section id="hours">
-					<h2>Hours</h2>
-					<p><span class="faded">Monday</span> Closed<br>
-					<span class="faded">Tuesday - Friday</span> Noon - 10p<br>
-					<span class="faded">Satuday - Sunday</span> 10a - 10p</p>
+				</div>
+				<section id="eventTheater" class="grid wideGrid">
+					<h2 class="spanGrid">Leonard Nimoy Event Horizon Theater</h2>
+					<div class="halfGrid">
+						<!-- <img id="busIcon" src="img/bus_icon-white.svg"> -->
+						<h4>Event Horizon Theater</h4>
+						<p>The 190-seat Leonard Nimoy Event Horizon presentation theater dramatically expands the Observatory's programming and education capabilities. The Leonard Nimoy Event Horizon realizes an unfulfilled intention of the Observatory's original architects to have a second theater to complement the planetarium. Though not constructed with the original building, the idea for a presentation theater was not lost, and the need became especially evident as the number of Observatory visitors and programs increased over the years.</p>
+						<p>The public presentation - "The Once and Future Griffith Observatory" - is a 24-minute film which weaves the history, recent renovation, and future of the Observatory into a tale of observation and inspiration. The theater also hosts live programs and demonstrations including All Space Considered and Let's Make a Comet. The Leonard Nimoy Event Horizon is also a classroom for the Observatory's school programs.</p>
+					</div>
+					<div class="halfGrid">
+						<h4>Now Showing...</h4>
+						<h5>The Once and Future Griffith Observatory</h5>
+						<p class="summary">An exciting and compelling introduction to the history and unique public offerings of the Observatory. This 24-minute film, entertainingly narrated by Leonard Nimoy, reveals how the vision of one man led to the creation of an architectural, cultural, and astronomical icon for southern California.</p>
+						<p class="summary">Shown every hour, on the hour.</p>
+						<h5>All Space Considered</h5>
+						<p class="summary">An inside look at the most talked-about subjects in astronomy, space science, and space exploration. Observatory curatorial staff and special guests bring visitors up to date on what is going on in space.</p>
+						<p class="summary">First Friday of each month, 7:30p - 9:45p</p>
+					</div>
 				</section>
-				
 			</div>
 	
 			<footer>
@@ -139,6 +161,12 @@
 					hamburger.classList.toggle('fa-times');
 				});
 
+			// -------
+
+			var getHeight = function () {
+
+			}
+
 			let showToggles = document.querySelectorAll('.showToggle');
 			
 			showToggles.forEach(function(showToggle) {
@@ -149,9 +177,23 @@
 				let showDesc = showToggle.querySelector(".showDesc")
 				let showArrow = showToggle.querySelector(".showArrow")
 
+				var getHeight = function () {
+					showDesc.style.display = 'block';
+					var height = showDesc.scrollHeight + 'px';
+					showDesc.style.display = '';
+					return height;
+				}
+
+				var height = getHeight();
 				showDesc.classList.toggle('active');
+				showDesc.style.height = height;
+
 				showArrow.classList.toggle('fa-angle-down');
 				showArrow.classList.toggle('fa-angle-up');
+
+				window.setTimeout (function () {	// maintains height
+					showDesc.style.height = '';
+				}, 350);
 			}
 		</script>
 	</body>

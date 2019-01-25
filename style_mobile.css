@@ -4,6 +4,7 @@
 		--lightgray: #999;
 		--midgray: #555;
 		--darkgray: #333;
+		--darkergray: #212121;
 	}
 	html {
 		margin: 0;
@@ -36,14 +37,34 @@
 		letter-spacing: .125em;
 		margin-bottom: 30px;
 		color: var(--gold);
+		text-align: center;
 	}
 	h4 {
-		font-family: 'Merriweather';
+		font-family: 'Barlow Condensed', sans-serif;
+		font-style: italic;
+		font-size: 1.5rem;
+		color: var(--gold);
+/*		font-family: 'Merriweather';
 		font-size: 1.25rem;
-		margin-bottom: 1rem;
+		margin-bottom: 1rem;*/
+	}
+	h5 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		letter-spacing: 0;
+		margin: 0;
+	}
+	.h4white {
+		letter-spacing: .0075em;
 	}
 	p {
 		line-height: 1.75em;
+	}
+	p.summary {
+		margin-top: 5px;
+		margin-left: 25px;
+		font-style: italic;
+		color: var(--lightgray);
 	}
 	.highlight {
 		color: salmon;
@@ -122,6 +143,9 @@
 		margin: 30px;
 		overflow: hidden;
 	}
+	.main section:last-child {
+		padding-bottom: 50px;
+	}
 	#hero {
 		padding-top: 0;
 		margin-top: 0;
@@ -135,10 +159,20 @@
 	#hero p {
 		font-size: .95rem;
 	}
+	.halfGrid {
+		overflow: hidden;
+		text-align: left;
+	}
+	.fullWidth {
+		background: var(--darkergray);
+	}
 	.card {
 		background: white;
 		color: var(--darkgray);
 		margin: 20px 10px 5px 10px;
+	}
+	.transparent-bg {
+		background: rgba(0,0,0,0);
 	}
 	.card img {
 		max-width: 100%;
@@ -151,14 +185,21 @@
 		padding: 1em;
 		margin: 10px;
 	}
+	.showTitle {
+		color: black;
+		letter-spacing: -.0125rem;
+	}
 	.showDesc {
 		display: none;
-		text-align: left;
+		height: 0;
+		overflow: hidden;
+		transition: height .35s ease-in-out;
+		/*text-align: left;*/
 	}
 	.showtimes {
 		padding: .25em;
 	}
-	#starParties {
+	#nextStarParty {
 		grid-column: 7 / span 5;
 		background: var(--midgray);
 		color: white;
@@ -201,6 +242,10 @@
 	#carIcon {
 		width: 20px;
 	}
+	#starParties {
+		padding: 30px 0;
+		text-align: left;
+	}
 	@keyframes spin {
 		100% { transform: rotate(360deg); }
 	}
@@ -220,6 +265,10 @@
 	}
 	.active {
 		display: block;
+		height: auto;
+	}
+	.hideSmall {
+		display: none;
 	}
 
 @media screen and (min-width: 415px) {
@@ -257,13 +306,31 @@
 		border-left: 2px solid var(--gold);
 		border-right: 2px solid var(--gold);
 	}
+	#starParties {
+		padding: 30px;
+	}
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-gap: 10px;
 	}
+	.wideGrid {
+		grid-gap: 30px;
+	}
 	.spanGrid {
 		grid-column: 1 / span 12;
+	}
+	.halfGrid {
+		grid-column: span 6;
+		padding: 0 10px;
+	}
+	.fullWidth {
+		margin: auto calc(48% - 48vw);
+	}
+	.rewrapped {
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.card {
 		grid-column: span 4;
@@ -274,6 +341,9 @@
 	}
 	#moonPhase img {
 		top: 15%;
+	}
+	.hideSmall {
+		display: block;
 	}
 }
 /*
