@@ -159,6 +159,18 @@
 	#hero p {
 		font-size: .95rem;
 	}
+	.quote {
+		font-style: italic;
+		letter-spacing: .025rem;
+	}
+	.refer {
+	    display: block;
+	    margin-top: 5px;
+	    text-align: right;
+	    font-size: .9rem;
+	    font-style: normal;
+	    letter-spacing: .025rem;
+	}
 	.halfGrid {
 		overflow: hidden;
 		text-align: left;
@@ -177,6 +189,7 @@
 	.card img {
 		max-width: 100%;
 		display: block;
+		object-fit: cover;
 	}
 	.cardBottom {
 		padding: 1.5em;
@@ -198,6 +211,20 @@
 	}
 	.showtimes {
 		padding: .25em;
+	}
+	.stats {
+		border-top: 3px solid var(--gold);
+	}
+	.stats p {
+		text-align: left;
+		margin: .5rem 0;
+	}
+	.stats p:last-child {
+		margin-bottom: 1.75rem;
+	}
+	.statTitle {
+		font-weight: 700;
+		color: var(--midgray);
 	}
 	#nextStarParty {
 		grid-column: 7 / span 5;
@@ -324,6 +351,9 @@
 		grid-column: span 6;
 		padding: 0 10px;
 	}
+	.spanRows {
+		grid-row: span 4;
+	}
 	.fullWidth {
 		margin: auto calc(48% - 48vw);
 	}
@@ -335,6 +365,9 @@
 	.card {
 		grid-column: span 4;
 		margin: 3px;
+	}
+	.doubleCard {
+		grid-column: span 8;
 	}
 	.minicard {
 		margin: 3px;
