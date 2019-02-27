@@ -115,7 +115,7 @@
 	nav .dash {
 		color: var(--gold);
 	}
-	li {
+	nav ul li {
 		padding: 3px 5px;
 		margin: 5px;
 		font-size: 1.5rem;
@@ -137,7 +137,7 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		position: relative;
-		overflow: auto;
+		overflow: auto;darkgray
 	}
 	section {
 		margin: 30px;
@@ -232,6 +232,13 @@
 	.statTitle {
 		font-weight: 700;
 		color: var(--midgray);
+	}
+	.locations {
+		padding-left: 2em;
+	}
+	.locations li {
+		text-align: left;
+		list-style-type: none;
 	}
 	#nextStarParty {
 		grid-column: 7 / span 5;
