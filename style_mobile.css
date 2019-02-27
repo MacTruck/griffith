@@ -212,6 +212,13 @@
 	.showtimes {
 		padding: .25em;
 	}
+	.cardBottom .hours {
+		text-align: center;
+	}
+	.menu {
+		color: var(--darkgray);
+		font-weight: 700;
+	}
 	.stats {
 		border-top: 3px solid var(--gold);
 	}
